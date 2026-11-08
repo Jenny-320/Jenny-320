@@ -1,0 +1,316 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 200" width="1200" height="200" role="img">
+<defs>
+  <path id="petal" d="M0,0 C-7,-6 -8,-17 -3,-22 L0,-18.5 L3,-22 C8,-17 7,-6 0,0Z"/>
+  <g id="flor">
+    <use xlink:href="#petal" fill="#ffd3df"/>
+    <use xlink:href="#petal" fill="#ffc4d4" transform="rotate(72)"/>
+    <use xlink:href="#petal" fill="#ffd3df" transform="rotate(144)"/>
+    <use xlink:href="#petal" fill="#ffc4d4" transform="rotate(216)"/>
+    <use xlink:href="#petal" fill="#ffd3df" transform="rotate(288)"/>
+    <circle r="5" fill="#f28aa8"/>
+    <g fill="#c2185b">
+      <circle cx="0" cy="-8" r="1.3"/><circle cx="7.6" cy="-2.5" r="1.3"/>
+      <circle cx="4.7" cy="6.5" r="1.3"/><circle cx="-4.7" cy="6.5" r="1.3"/>
+      <circle cx="-7.6" cy="-2.5" r="1.3"/>
+    </g>
+  </g>
+  <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="2.2" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur stdDeviation="18"/>
+  </filter>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#120d22"/>
+    <stop offset=".55" stop-color="#3b1f46"/>
+    <stop offset="1" stop-color="#b9708f"/>
+  </linearGradient>
+  <radialGradient id="moonglow">
+    <stop offset="0" stop-color="#ffe3ec" stop-opacity=".55"/>
+    <stop offset="1" stop-color="#ffe3ec" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="frame"><rect width="1200" height="200" rx="22"/></clipPath>
+</defs>
+<style>
+  .fall{animation:fall linear infinite}
+  .sway{animation:sway ease-in-out infinite alternate}
+  .spin{animation:spin linear infinite;transform-box:fill-box;transform-origin:center}
+  .flip{animation:flip ease-in-out infinite alternate;transform-box:fill-box;transform-origin:center}
+  .mote{animation:mote linear infinite}
+  .twinkle{animation:twinkle ease-in-out infinite alternate}
+  .rise{animation:rise 1.6s cubic-bezier(.2,.7,.2,1) backwards}
+  @keyframes sway{from{transform:translateX(-22px)}to{transform:translateX(22px)}}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @keyframes flip{from{transform:scaleX(1)}to{transform:scaleX(.25)}}
+  @keyframes mote{0%{transform:translate(0,0);opacity:0}20%{opacity:.95}80%{opacity:.6}100%{transform:translate(24px,-130px);opacity:0}}
+  @keyframes twinkle{from{opacity:.15}to{opacity:1}}
+  @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+  @keyframes fall{from{transform:translate(0,-30px)}to{transform:translate(-140px,230px)}}
+  .branch{transform-origin:0 30px;animation:breeze 7s ease-in-out infinite alternate}
+  @keyframes breeze{from{transform:rotate(-1.2deg)}to{transform:rotate(1.2deg)}}</style>
+<title>Gracias por pasar</title>
+<g clip-path="url(#frame)">
+  <rect width="1200" height="200" fill="url(#sky)"/>
+  <circle class="twinkle" cx="425.3" cy="104.82" r="0.8" fill="#fff" style="animation-duration:3.17s;animation-delay:-2.58s"/><circle class="twinkle" cx="907.11" cy="84.61" r="0.75" fill="#fff" style="animation-duration:2.55s;animation-delay:-2.45s"/><circle class="twinkle" cx="313.11" cy="86.14" r="1.39" fill="#fff" style="animation-duration:2.01s;animation-delay:-1.91s"/><circle class="twinkle" cx="130.28" cy="20.71" r="0.7" fill="#fff" style="animation-duration:2.7s;animation-delay:-1.04s"/><circle class="twinkle" cx="1144.69" cy="33.92" r="0.78" fill="#fff" style="animation-duration:1.81s;animation-delay:-1.21s"/><circle class="twinkle" cx="607.42" cy="74.44" r="1.16" fill="#fff" style="animation-duration:3.9s;animation-delay:-3.86s"/><circle class="twinkle" cx="984.51" cy="96.85" r="1.26" fill="#fff" style="animation-duration:1.78s;animation-delay:-0.01s"/><circle class="twinkle" cx="405.52" cy="85.12" r="1.35" fill="#fff" style="animation-duration:2.57s;animation-delay:-2.56s"/><circle class="twinkle" cx="1042.75" cy="21.8" r="1.1" fill="#fff" style="animation-duration:2.9s;animation-delay:-0.1s"/><circle class="twinkle" cx="281.89" cy="68.87" r="0.88" fill="#fff" style="animation-duration:2.77s;animation-delay:-2.3s"/><circle class="twinkle" cx="1154.04" cy="91.6" r="0.75" fill="#fff" style="animation-duration:2.62s;animation-delay:-2s"/><circle class="twinkle" cx="284.63" cy="105.87" r="0.71" fill="#fff" style="animation-duration:3.89s;animation-delay:-0.42s"/><circle class="twinkle" cx="557.56" cy="85.95" r="1.21" fill="#fff" style="animation-duration:3.56s;animation-delay:-1.85s"/><circle class="twinkle" cx="41.46" cy="88.39" r="1.25" fill="#fff" style="animation-duration:2.62s;animation-delay:-1.2s"/><circle class="twinkle" cx="119.67" cy="26.74" r="1.24" fill="#fff" style="animation-duration:1.92s;animation-delay:-0.64s"/><circle class="twinkle" cx="280.23" cy="116.42" r="1.04" fill="#fff" style="animation-duration:3.01s;animation-delay:-1.17s"/><circle class="twinkle" cx="514.86" cy="119.95" r="0.75" fill="#fff" style="animation-duration:1.87s;animation-delay:-0.52s"/><circle class="twinkle" cx="424.39" cy="45.01" r="1.01" fill="#fff" style="animation-duration:2.33s;animation-delay:-0.32s"/><circle class="twinkle" cx="827.69" cy="53.91" r="1.08" fill="#fff" style="animation-duration:2.25s;animation-delay:-0.52s"/><circle class="twinkle" cx="439.35" cy="87.41" r="1.02" fill="#fff" style="animation-duration:3.04s;animation-delay:-1.66s"/><circle class="twinkle" cx="721.18" cy="94.5" r="0.91" fill="#fff" style="animation-duration:3.03s;animation-delay:-1.46s"/><circle class="twinkle" cx="461.26" cy="20.92" r="1.48" fill="#fff" style="animation-duration:1.79s;animation-delay:-0.66s"/><circle class="twinkle" cx="1157.52" cy="44.11" r="1.17" fill="#fff" style="animation-duration:2.12s;animation-delay:-0.7s"/><circle class="twinkle" cx="812.85" cy="61.86" r="0.71" fill="#fff" style="animation-duration:2.84s;animation-delay:-1.13s"/><circle class="twinkle" cx="257.27" cy="99.41" r="0.98" fill="#fff" style="animation-duration:2.34s;animation-delay:-1.52s"/><circle class="twinkle" cx="752.57" cy="71.46" r="1.24" fill="#fff" style="animation-duration:3.32s;animation-delay:-0.92s"/><circle class="twinkle" cx="147.17" cy="94.94" r="1.32" fill="#fff" style="animation-duration:2.55s;animation-delay:-1.07s"/><circle class="twinkle" cx="566.45" cy="100.87" r="1.29" fill="#fff" style="animation-duration:1.76s;animation-delay:-1.69s"/><circle class="twinkle" cx="215.09" cy="43.01" r="1.24" fill="#fff" style="animation-duration:3.19s;animation-delay:-1.21s"/><circle class="twinkle" cx="629.76" cy="49.39" r="0.64" fill="#fff" style="animation-duration:3.39s;animation-delay:-1.48s"/>
+  <g transform="translate(1200,0) scale(-.62,.62)">
+  <g class="branch">
+    <g fill="none" stroke="#2a1622" stroke-linecap="round">
+      <path d="M-30,28 C70,38 160,68 240,95 S400,130 520,118" stroke-width="13"/>
+      <path d="M150,62 C175,32 205,18 240,10" stroke-width="6"/>
+      <path d="M262,100 C282,128 298,146 320,160" stroke-width="5.5"/>
+      <path d="M380,121 C410,92 440,80 470,72" stroke-width="6"/>
+      <path d="M470,121 C498,140 524,150 562,152" stroke-width="5"/>
+      <path d="M90,40 C100,30 112,24 126,22" stroke-width="3"/>
+      <path d="M520,118 C545,112 565,104 590,102" stroke-width="3.5"/>
+    </g>
+    <path d="M-30,24 C70,34 160,63 240,90 S400,124 520,113" fill="none" stroke="#5a3346" stroke-width="2.5" stroke-linecap="round" opacity=".6"/><ellipse cx="205" cy="20" rx="4" ry="5.5" fill="#f48fb1"/><ellipse cx="275" cy="38" rx="4" ry="5.5" fill="#f48fb1"/><ellipse cx="338" cy="172" rx="4" ry="5.5" fill="#f48fb1"/><ellipse cx="482" cy="62" rx="4" ry="5.5" fill="#f48fb1"/><ellipse cx="585" cy="158" rx="4" ry="5.5" fill="#f48fb1"/><ellipse cx="400" cy="104" rx="4" ry="5.5" fill="#f48fb1"/><ellipse cx="150" cy="56" rx="4" ry="5.5" fill="#f48fb1"/><use xlink:href="#flor" transform="translate(238,12) rotate(0.65) scale(0.95)"/><use xlink:href="#flor" transform="translate(222,26) rotate(19.08) scale(0.7)"/><use xlink:href="#flor" transform="translate(255,30) rotate(16.99) scale(0.6)"/><use xlink:href="#flor" transform="translate(180,40) rotate(43.33) scale(0.75)"/><use xlink:href="#flor" transform="translate(318,160) rotate(31.24) scale(0.95)"/><use xlink:href="#flor" transform="translate(300,140) rotate(39.25) scale(0.7)"/><use xlink:href="#flor" transform="translate(334,142) rotate(36.57) scale(0.6)"/><use xlink:href="#flor" transform="translate(286,118) rotate(65.8) scale(0.55)"/><use xlink:href="#flor" transform="translate(468,72) rotate(4.69) scale(1)"/><use xlink:href="#flor" transform="translate(450,58) rotate(63.31) scale(0.65)"/><use xlink:href="#flor" transform="translate(490,88) rotate(60.2) scale(0.6)"/><use xlink:href="#flor" transform="translate(420,92) rotate(37.94) scale(0.55)"/><use xlink:href="#flor" transform="translate(560,152) rotate(34.16) scale(0.9)"/><use xlink:href="#flor" transform="translate(540,140) rotate(20.45) scale(0.6)"/><use xlink:href="#flor" transform="translate(578,136) rotate(7.89) scale(0.55)"/><use xlink:href="#flor" transform="translate(520,118) rotate(39.3) scale(0.85)"/><use xlink:href="#flor" transform="translate(96,52) rotate(48.42) scale(0.6)"/><use xlink:href="#flor" transform="translate(360,124) rotate(48.74) scale(0.5)"/><use xlink:href="#flor" transform="translate(130,76) rotate(31.75) scale(0.5)"/></g></g>
+  <g filter="url(#glow)"><circle class="mote" cx="83.8" cy="136.61" r="1.5" fill="#fff0f6" style="animation-duration:9.94s;animation-delay:-1.37s"/><circle class="mote" cx="512.53" cy="180.73" r="2.13" fill="#fff0f6" style="animation-duration:10.15s;animation-delay:-1.89s"/><circle class="mote" cx="700.44" cy="186.25" r="2.08" fill="#fff0f6" style="animation-duration:9.74s;animation-delay:-9.24s"/><circle class="mote" cx="1084.34" cy="191.04" r="1.87" fill="#fff0f6" style="animation-duration:11.53s;animation-delay:-6.39s"/><circle class="mote" cx="1119.6" cy="144.36" r="2.48" fill="#fff0f6" style="animation-duration:7.72s;animation-delay:-3s"/><circle class="mote" cx="774.04" cy="167.4" r="1.3" fill="#fff0f6" style="animation-duration:10.42s;animation-delay:-8.71s"/><circle class="mote" cx="150.4" cy="152.64" r="2.17" fill="#fff0f6" style="animation-duration:7.86s;animation-delay:-3.75s"/><circle class="mote" cx="472.29" cy="173" r="1.68" fill="#fff0f6" style="animation-duration:9.25s;animation-delay:-0.37s"/><circle class="mote" cx="517.4" cy="111.42" r="2.11" fill="#fff0f6" style="animation-duration:11.72s;animation-delay:-4.16s"/><circle class="mote" cx="515.46" cy="156.29" r="2.41" fill="#fff0f6" style="animation-duration:9.45s;animation-delay:-1.68s"/><circle class="mote" cx="45.3" cy="140.79" r="1.04" fill="#fff0f6" style="animation-duration:6.59s;animation-delay:-2.72s"/><circle class="mote" cx="462.38" cy="180.69" r="1.82" fill="#fff0f6" style="animation-duration:6.21s;animation-delay:-4.1s"/><circle class="mote" cx="1148.96" cy="127.51" r="1.87" fill="#fff0f6" style="animation-duration:11.32s;animation-delay:-3.77s"/><circle class="mote" cx="1137.89" cy="165.13" r="1.55" fill="#fff0f6" style="animation-duration:8.48s;animation-delay:-0.24s"/><circle class="mote" cx="331.12" cy="156.75" r="2.4" fill="#fff0f6" style="animation-duration:8.79s;animation-delay:-8.17s"/><circle class="mote" cx="194.33" cy="187.73" r="2" fill="#fff0f6" style="animation-duration:11.16s;animation-delay:-7.26s"/></g>
+  <text class="rise" x="600" y="104" text-anchor="middle" font-family="Georgia,'Times New Roman','Noto Serif JP',serif" font-size="34" fill="#fff" letter-spacing="3">ありがとう</text>
+  <text class="rise" style="animation-delay:.5s" x="600" y="140" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" fill="#f8d3df" letter-spacing="2">Gracias por pasar  ·  que florezcan tus ideas</text>
+  
+    <g transform="translate(277.06,0)" opacity="0.9">
+      <g class="fall" style="animation-duration:10.65s;animation-delay:-0.85s">
+        <g class="sway" style="animation-duration:4.3s;animation-delay:-3.85s">
+          <g class="spin" style="animation-duration:9.95s">
+            <g class="flip" style="animation-duration:1.11s">
+              <use xlink:href="#petal" fill="#ffd1dc" transform="scale(0.62)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(1168.81,0)" opacity="0.89">
+      <g class="fall" style="animation-duration:7.97s;animation-delay:-5.08s">
+        <g class="sway" style="animation-duration:4.95s;animation-delay:-2.79s">
+          <g class="spin" style="animation-duration:7.15s">
+            <g class="flip" style="animation-duration:1.17s">
+              <use xlink:href="#petal" fill="#ffe4ec" transform="scale(0.47)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(1079.08,0)" opacity="0.85">
+      <g class="fall" style="animation-duration:8.01s;animation-delay:-6.09s">
+        <g class="sway" style="animation-duration:4.11s;animation-delay:-2.76s">
+          <g class="spin" style="animation-duration:4.77s">
+            <g class="flip" style="animation-duration:1.76s">
+              <use xlink:href="#petal" fill="#ffe4ec" transform="scale(0.56)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(599.55,0)" opacity="0.82">
+      <g class="fall" style="animation-duration:6.86s;animation-delay:-5.06s">
+        <g class="sway" style="animation-duration:2.62s;animation-delay:-0.07s">
+          <g class="spin" style="animation-duration:7.43s">
+            <g class="flip" style="animation-duration:1.07s">
+              <use xlink:href="#petal" fill="#ffe4ec" transform="scale(0.52)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(939.61,0)" opacity="0.81">
+      <g class="fall" style="animation-duration:8.92s;animation-delay:-3.16s">
+        <g class="sway" style="animation-duration:3.37s;animation-delay:-0.27s">
+          <g class="spin" style="animation-duration:5.55s">
+            <g class="flip" style="animation-duration:1.37s">
+              <use xlink:href="#petal" fill="#ffd1dc" transform="scale(0.53)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(178.55,0)" opacity="0.85">
+      <g class="fall" style="animation-duration:10.28s;animation-delay:-8.05s">
+        <g class="sway" style="animation-duration:4.94s;animation-delay:-0.71s">
+          <g class="spin" style="animation-duration:9.81s">
+            <g class="flip" style="animation-duration:1.12s">
+              <use xlink:href="#petal" fill="#f9a3bb" transform="scale(0.71)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(187.53,0)" opacity="0.99">
+      <g class="fall" style="animation-duration:8.95s;animation-delay:-6.18s">
+        <g class="sway" style="animation-duration:3.59s;animation-delay:-0.65s">
+          <g class="spin" style="animation-duration:6.43s">
+            <g class="flip" style="animation-duration:1.34s">
+              <use xlink:href="#petal" fill="#f9a3bb" transform="scale(0.7)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(1275.72,0)" opacity="0.96">
+      <g class="fall" style="animation-duration:8.46s;animation-delay:-7.75s">
+        <g class="sway" style="animation-duration:2.67s;animation-delay:-1.17s">
+          <g class="spin" style="animation-duration:6.59s">
+            <g class="flip" style="animation-duration:1s">
+              <use xlink:href="#petal" fill="#ffe4ec" transform="scale(0.54)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(865.35,0)" opacity="0.91">
+      <g class="fall" style="animation-duration:7.36s;animation-delay:-6.22s">
+        <g class="sway" style="animation-duration:4.34s;animation-delay:-2.35s">
+          <g class="spin" style="animation-duration:8.6s">
+            <g class="flip" style="animation-duration:0.98s">
+              <use xlink:href="#petal" fill="#ffc6d5" transform="scale(0.47)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(313.67,0)" opacity="0.86">
+      <g class="fall" style="animation-duration:10.92s;animation-delay:-1.63s">
+        <g class="sway" style="animation-duration:2.94s;animation-delay:-1.87s">
+          <g class="spin" style="animation-duration:5.1s">
+            <g class="flip" style="animation-duration:1.02s">
+              <use xlink:href="#petal" fill="#ffc6d5" transform="scale(0.47)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(826.61,0)" opacity="0.88">
+      <g class="fall" style="animation-duration:7.04s;animation-delay:-5.06s">
+        <g class="sway" style="animation-duration:2.85s;animation-delay:-2.48s">
+          <g class="spin" style="animation-duration:4.69s">
+            <g class="flip" style="animation-duration:0.84s">
+              <use xlink:href="#petal" fill="#f9a3bb" transform="scale(0.46)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(1231.66,0)" opacity="0.76">
+      <g class="fall" style="animation-duration:10.14s;animation-delay:-6.87s">
+        <g class="sway" style="animation-duration:4.68s;animation-delay:-2.89s">
+          <g class="spin" style="animation-duration:4.23s">
+            <g class="flip" style="animation-duration:0.87s">
+              <use xlink:href="#petal" fill="#f9a3bb" transform="scale(0.57)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(1025.4,0)" opacity="0.8">
+      <g class="fall" style="animation-duration:8.3s;animation-delay:-1.49s">
+        <g class="sway" style="animation-duration:3.35s;animation-delay:-0.7s">
+          <g class="spin" style="animation-duration:4.5s">
+            <g class="flip" style="animation-duration:1.79s">
+              <use xlink:href="#petal" fill="#f9a3bb" transform="scale(0.63)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(1348.07,0)" opacity="0.85">
+      <g class="fall" style="animation-duration:10s;animation-delay:-4.84s">
+        <g class="sway" style="animation-duration:4.7s;animation-delay:-1.76s">
+          <g class="spin" style="animation-duration:5.12s">
+            <g class="flip" style="animation-duration:1.48s">
+              <use xlink:href="#petal" fill="#ffe4ec" transform="scale(0.64)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(1352.19,0)" opacity="0.75">
+      <g class="fall" style="animation-duration:10.73s;animation-delay:-5.82s">
+        <g class="sway" style="animation-duration:3.39s;animation-delay:-0.06s">
+          <g class="spin" style="animation-duration:8.46s">
+            <g class="flip" style="animation-duration:1.52s">
+              <use xlink:href="#petal" fill="#ffb7c9" transform="scale(0.49)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(668.04,0)" opacity="0.95">
+      <g class="fall" style="animation-duration:10.79s;animation-delay:-1.37s">
+        <g class="sway" style="animation-duration:3.7s;animation-delay:-2.95s">
+          <g class="spin" style="animation-duration:4.89s">
+            <g class="flip" style="animation-duration:1.4s">
+              <use xlink:href="#petal" fill="#ffb7c9" transform="scale(0.54)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(735.02,0)" opacity="0.9">
+      <g class="fall" style="animation-duration:8.4s;animation-delay:-3.29s">
+        <g class="sway" style="animation-duration:2.82s;animation-delay:-2.02s">
+          <g class="spin" style="animation-duration:4.51s">
+            <g class="flip" style="animation-duration:1.49s">
+              <use xlink:href="#petal" fill="#ffc6d5" transform="scale(0.51)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(847.94,0)" opacity="0.81">
+      <g class="fall" style="animation-duration:9.74s;animation-delay:-8.36s">
+        <g class="sway" style="animation-duration:3.9s;animation-delay:-2.36s">
+          <g class="spin" style="animation-duration:8.2s">
+            <g class="flip" style="animation-duration:1.46s">
+              <use xlink:href="#petal" fill="#ffc6d5" transform="scale(0.49)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(1010.01,0)" opacity="0.86">
+      <g class="fall" style="animation-duration:10.19s;animation-delay:-0.25s">
+        <g class="sway" style="animation-duration:3.92s;animation-delay:-2s">
+          <g class="spin" style="animation-duration:5.93s">
+            <g class="flip" style="animation-duration:1.25s">
+              <use xlink:href="#petal" fill="#f9a3bb" transform="scale(0.66)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(393.05,0)" opacity="0.9">
+      <g class="fall" style="animation-duration:6.49s;animation-delay:-2.94s">
+        <g class="sway" style="animation-duration:3.86s;animation-delay:-3.07s">
+          <g class="spin" style="animation-duration:8.64s">
+            <g class="flip" style="animation-duration:1.26s">
+              <use xlink:href="#petal" fill="#ffe4ec" transform="scale(0.48)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(610.39,0)" opacity="0.94">
+      <g class="fall" style="animation-duration:7.95s;animation-delay:-0.14s">
+        <g class="sway" style="animation-duration:4.53s;animation-delay:-2.67s">
+          <g class="spin" style="animation-duration:4.8s">
+            <g class="flip" style="animation-duration:1.01s">
+              <use xlink:href="#petal" fill="#ffc6d5" transform="scale(0.49)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g transform="translate(1290.11,0)" opacity="0.82">
+      <g class="fall" style="animation-duration:9.74s;animation-delay:-3.9s">
+        <g class="sway" style="animation-duration:3.52s;animation-delay:-1.23s">
+          <g class="spin" style="animation-duration:7.5s">
+            <g class="flip" style="animation-duration:2.11s">
+              <use xlink:href="#petal" fill="#ffb7c9" transform="scale(0.55)"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+</g>
+</svg>
