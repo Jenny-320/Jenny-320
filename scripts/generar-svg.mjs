@@ -183,7 +183,7 @@ const banner = svg(W, H, `
       <text x="160" y="266" font-size="54" fill="#ffffff" font-family="${SERIF}" letter-spacing="1">Jennifer Carreño</text>
     </g>
     <path class="draw" d="M94,290 H514" stroke="#f7a8c0" stroke-width="2" stroke-linecap="round"/>
-    <text class="rise d3" x="92" y="324" font-size="21" fill="#f8e3ea">Contenido  ·  Automatización  ·  Marketing con IA</text>
+    <text class="rise d3" x="92" y="324" font-size="19" fill="#f8e3ea">Project Manager  ·  Contenido  ·  Automatización  ·  Marketing con IA</text>
     <text class="rise d4" x="92" y="356" font-size="17" fill="#e9b8c9" letter-spacing="1">en <tspan fill="#ffffff" font-weight="600">Reech AI</tspan>  —  reechai.com</text>
   </g>
   ${petals(34, { w: W, h: H })}

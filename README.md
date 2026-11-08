@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="assets/banner.svg" width="100%" alt="Jennifer Carreño — Contenido, automatización y marketing con IA en Reech AI. Rama de cerezo con pétalos cayendo frente a la luna y el monte Fuji." />
+  <img src="assets/banner.svg" width="100%" alt="Jennifer Carreño — Project Manager, contenido, automatización y marketing con IA en Reech AI. Rama de cerezo con pétalos cayendo frente a la luna y el monte Fuji." />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Noto+Serif+JP&size=22&duration=3200&pause=900&color=F48FB1&center=true&vCenter=true&width=640&lines=Contenido+y+video+con+IA+%F0%9F%8E%AC;Automatizaci%C3%B3n+y+agentes+inteligentes+%E2%9A%99%EF%B8%8F;Marketing+y+performance+con+datos+%F0%9F%93%88;Con+calma+y+constancia%2C+como+un+cerezo+%F0%9F%8C%B8" alt="Contenido y video con IA · Automatización y agentes · Marketing y performance" />
+  <img src="https://readme-typing-svg.demolab.com?font=Noto+Serif+JP&size=22&duration=3200&pause=900&color=F48FB1&center=true&vCenter=true&width=640&lines=Project+Manager+%F0%9F%97%82%EF%B8%8F;Contenido+y+video+con+IA+%F0%9F%8E%AC;Automatizaci%C3%B3n+y+agentes+inteligentes+%E2%9A%99%EF%B8%8F;Marketing+y+performance+con+datos+%F0%9F%93%88;Con+calma+y+constancia%2C+como+un+cerezo+%F0%9F%8C%B8" alt="Project Manager · Contenido y video con IA · Automatización y agentes · Marketing y performance" />
 </p>
 
 <p align="center">
@@ -16,19 +16,25 @@
 
 Hola, soy **Jennifer**. Trabajo en **[Reech AI](https://reechai.com)**, una empresa de tecnología e inteligencia artificial aplicada a negocios, con base en Perú y operación en Latinoamérica. Ayudamos a las empresas a vender más y operar mejor combinando IA, automatización, datos y marketing.
 
-Me muevo entre tres mundos que se complementan:
+Me muevo entre cuatro mundos que se complementan:
 
 <table>
   <tr>
-    <td width="33%" valign="top">
+    <td width="50%" valign="top">
+      <h3 align="center">🗂️<br/>Project Management</h3>
+      <p>Coordino proyectos de principio a fin: alcance, prioridades, tiempos y comunicación entre el equipo y los clientes, para que cada entrega llegue a buen puerto.</p>
+    </td>
+    <td width="50%" valign="top">
       <h3 align="center">🎬<br/>Contenido y video</h3>
       <p>Guiones, edición y animación de video con código (Remotion) y herramientas de IA generativa para contar historias de marca.</p>
     </td>
-    <td width="33%" valign="top">
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
       <h3 align="center">⚙️<br/>Automatización</h3>
       <p>Agentes conversacionales, flujos automatizados e integraciones que conectan WhatsApp, CRM y datos para que el trabajo repetitivo se haga solo.</p>
     </td>
-    <td width="33%" valign="top">
+    <td width="50%" valign="top">
       <h3 align="center">📈<br/>Marketing y performance</h3>
       <p>Campañas, medición y dashboards: entender qué funciona y mejorar con datos, no con intuición.</p>
     </td>
